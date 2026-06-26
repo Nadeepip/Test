@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>Test Game History</title>
+<style>
+body {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 40px;
+  background: #f2f2f2;
+}
+
+button {
+  padding: 15px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.back {
+  background: #4CAF50;
+  color: white;
+}
+
+.home {
+  background: #2196F3;
+  color: white;
+}
+
+.box {
+  margin-top: 40px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+}
+</style>
+</head>
+<body>
+
+<h2>🎮 صفحه تست بازی</h2>
+
+<div class="box">
+  <p>این صفحه برای تست برگشت در PWA و مرورگر است</p>
+</div>
+
+<button class="back" onclick="history.back()">
+  ⬅️ Back با History
+</button>
+
+<button class="home" onclick="goHome()">
+  🏠 رفتن به پرتال (location)
+</button>
+
+<script>
+function goHome() {
+  // اینو عوض کن به صفحه اصلی پرتال خودت
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
